@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emotion-recognition-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+emotion-recognition-claim-audit = "emotion_recognition_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["emotion_recognition_claim_audit*"]
